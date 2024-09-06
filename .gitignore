@@ -4,3 +4,4 @@
 .cache/*
 .venv/
 venv/
+finish_housing_predictions_golden.ipynb
