@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 def population_price_visual(df):
-    california_img = mpimg.imread('C:\CaliforniaHousingPrediction\images\california.png')
+    california_img = mpimg.imread('..\images\california.png')
     df.plot(kind="scatter", x="longitude", y="latitude", figsize=(10, 7),
                  s=df['population'] / 100, label="Population",
                  c="median_house_value", cmap=plt.get_cmap("jet"),
@@ -15,6 +15,6 @@ def population_price_visual(df):
 
     prices = df["median_house_value"]
     np.linspace(prices.min(), prices.max(), 11)
-    
+
     population_price_graph = plt.show()
     return population_price_graph
